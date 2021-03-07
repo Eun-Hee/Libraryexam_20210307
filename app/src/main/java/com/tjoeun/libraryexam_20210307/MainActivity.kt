@@ -17,7 +17,7 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
-//        전화걸기 버튼 눌리면 => 실제 전화 걸어보자
+//        전화걸기 버튼 눌리면 => 권한이 있는지 확인하고 => 실제 전화 걸어보자
         callBtn.setOnClickListener {
             val myUri = Uri.parse("tel:010-2222-3333")
             val myIntent = Intent(Intent.ACTION_CALL, myUri)
