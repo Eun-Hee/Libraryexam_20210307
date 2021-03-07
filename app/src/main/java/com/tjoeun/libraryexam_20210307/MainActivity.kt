@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import kotlinx.android.synthetic.main.activity_main.*
@@ -63,6 +64,10 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setValues() {
+
+//        인터넷의 이미지를 recentImg에 적용
+
+        Glide.with(mContext).load("https://upload.wikimedia.org/wikipedia/commons/7/7d/IU_MelOn_Music_Awards_2017_06.jpg").into(recentImg)
 
     }
 
